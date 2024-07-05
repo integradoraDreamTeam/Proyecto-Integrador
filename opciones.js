@@ -14,7 +14,7 @@
  especie.addEventListener('change', (event) => {
      const especieSelected = event.target.value;
      const opcionesRaza = breeds[especieSelected] || [];
-     
+     raza.innerHTML= '<option hidden>--Especia del animal--</option>'
  
      opcionesRaza.forEach(breed => {
          const opcion = document.createElement("option");
