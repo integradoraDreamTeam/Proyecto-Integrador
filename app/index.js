@@ -9,7 +9,9 @@ import express from 'express';
 const server=express();
 server.set("port",4000);
 server.listen(server.get("port"));
-server.get("/",(req,res)=> res.sendFile(_dirname + "/pages/mainpre.html"))
+
+// Rutas
+server.get("/main",(req,res)=> res.sendFile(_dirname + "/pages/mainpre.html"))
 server.get("/sUp",(req,res)=> res.sendFile(_dirname + "/pages/registroUsuario.html"))
 
 //Configuracion
